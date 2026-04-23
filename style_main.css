@@ -1,0 +1,227 @@
+header {
+    background-image: url(img/school.jpg);
+    height: 500px;
+    background-size: 100% 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 400%;
+}
+header div {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.293);
+    border-radius: 15px 15px 0px 0px;
+}
+header div div {
+    color: rgb(221, 232, 238);
+    align-content: center;
+}
+.navigation {
+    background-color: #BDDBDB;
+    border-radius: 0px 0px 15px 15px;
+    color: rgb(68, 68, 68);
+    transition: all ease 0.3s;
+}
+.navigation nav{
+    gap: 90px;
+    display: inline-flex;
+    padding-left: 4%;
+}
+.navigation nav a{
+    transition: all ease 0.3s;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #556262;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.navigation a:hover{
+    transform: scale(1.3);
+    background-color: rgba(172, 206, 201, 0.821);
+    padding: 0 2% 0 2%;
+}
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 6% 3% 0 3%;
+    background-color: #bddbdb65;
+    padding: 5%;
+    border-radius: 15px;
+    padding-top: 1%;
+}
+main h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.info{
+    background-color: #BDDBDB;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.info:hover {
+    transform: scale(1.03);
+}
+.info div{
+    grid-column: 1;
+}
+.info div p{
+    font-size: 110%;
+}
+.info img{
+    grid-column: 2;
+    width: 105%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.info img:hover {
+    transform: scale(1.03);
+}
+.news{
+    background-color: rgb(194, 228, 228);
+    padding: 4%;
+    margin-top: 8%;
+    border-radius: 15px;
+}
+.card_news{
+    background-color: #bfdfdf;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    margin-top: 7%;
+    border: #a6bfbf solid 2px;
+    transition: all ease 0.3s;
+    font-size: larger;
+}
+.card_news:hover {
+    transform: scale(1.03);
+}
+.card_news nav{
+    grid-column: 1;
+}
+.card_news img{
+    grid-column: 2;
+    width: 75%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.card_news img:hover {
+    transform: scale(1.03);
+}
+.news button{
+    margin-top: 5%;
+    padding: 2% 13% 2% 13%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #556262;
+    background-color: #c2dfdf;
+    border: 1.5px solid rgb(122, 122, 122);
+    transition: all ease 0.3s;
+}
+.news button:hover{
+    transform: scale(1.05);
+}
+.mega_weeks{
+    background-color: #BDDBDB;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    margin-top: 5%;
+}
+.mega_weeks ul{
+    font-size: 150%;
+}
+.mega_weeks button{
+    margin-top: 5%;
+    padding: 2% 13% 2% 13%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #556262;
+    background-color: #c2dfdf;
+    border: 1.5px solid rgb(122, 122, 122);
+    transition: all ease 0.3s;
+}
+.mega_weeks button:hover{
+    transform: scale(1.05);
+}
+/* Footer */
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 150px;
+    color: black;
+    background-color: #BDDBDB;
+    border-radius: 15px;
+    display: grid;
+    padding: 0% 7% 0% 7%;
+}
+footer ul{
+    justify-self: center;
+    grid-column: 1;
+}
+footer ul p{
+    transition: all ease 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav_footer{
+    grid-column: 2;
+}
+
+@media (max-width: 1300px) {
+    .navigation nav a:hover {
+        padding: 0 0 0 0;
+        transform: none;
+    }
+    .navigation nav a{
+        transition: none;
+    }
+    .card1 {
+        grid-column: auto;
+    }
+    .card2 {
+        grid-column: auto;
+    }
+    .card3 {
+        grid-column: auto;
+    }
+    .navigation {
+        background-color: #BDDBDB;
+        border-radius: 0px 0px 15px 15px;
+        color: rgb(68, 68, 68);
+        margin-top: -20px;
+    }
+    .navigation nav{
+        gap: 90px;
+        display: block;
+        padding-left: 4%;
+    }
+    main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 40% 3% 0 3%;
+        background-color: #bddbdb65;
+        padding: 5%;
+        border-radius: 15px;
+        padding-top: 1%;
+    }
+    .info div{
+        grid-row: 2;
+        grid-column: auto;
+    }
+    .info img{
+        grid-row: 1;
+        grid-column: auto;
+        width: 100%;
+    }
+    .card_news nav{
+        grid-row: 2;
+        grid-column: auto;
+    }
+    .card_news img{
+        grid-row: 1;
+        grid-column: auto;
+        width: 100%;
+    }
+}

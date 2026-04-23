@@ -1,0 +1,149 @@
+header {
+    background-image: url(img/school.jpg);
+    height: 500px;
+    background-size: 100% 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 400%;
+}
+header div {
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.293);
+    border-radius: 15px 15px 0px 0px;
+}
+header div div {
+    color: rgb(221, 232, 238);
+    align-content: center;
+}
+.navigation {
+    background-color: #BDDBDB;
+    border-radius: 0px 0px 15px 15px;
+    color: rgb(68, 68, 68);
+    transition: all ease 0.3s;
+}
+.navigation nav{
+    gap: 90px;
+    display: inline-flex;
+    padding-left: 4%;
+}
+.navigation nav a{
+    transition: all ease 0.3s;
+    text-decoration: none;
+    color: #556262;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+.navigation a:hover{
+    transform: scale(1.3);
+    background-color: rgba(172, 206, 201, 0.821);
+    padding: 0 2% 0 2%;
+}
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 6% 3% 0 3%;
+    background-color: #bddbdb65;
+    padding: 5%;
+    border-radius: 15px;
+    padding-top: 1%;
+}
+main h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.card {
+    margin-top: 3%;
+    background-color: #BDDBDB;
+    padding: 4%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+}
+.card div {
+    display: grid;
+    column-gap: 250px;
+}
+.card p {
+    font-size: 150%;
+    grid-column: 1;
+    margin-right: 50px;
+}
+.card img {
+    grid-column: 2;
+    width: 90%;
+}
+.card button{
+    padding: 1% 10% 1% 10%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #556262;
+    background-color: #c2dfdf;
+    border: 1.5px solid rgb(122, 122, 122);
+    transition: all ease 0.3s;
+    width: 50%;
+    text-align: center;
+}
+.card button:hover{
+    transform: scale(1.05);
+}
+/* Footer */
+footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 150px;
+    color: black;
+    background-color: #BDDBDB;
+    border-radius: 15px;
+    display: grid;
+    padding: 0% 7% 0% 7%;
+}
+footer ul{
+    justify-self: center;
+    grid-column: 1;
+}
+footer ul p{
+    transition: all ease 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav_footer{
+    grid-column: 2;
+}
+
+@media (max-width: 1300px) {
+    .navigation {
+        background-color: #BDDBDB;
+        border-radius: 0px 0px 15px 15px;
+        color: rgb(68, 68, 68);
+    }
+    .navigation nav{
+        margin-top: -20px;
+        gap: 90px;
+        display: block;
+        padding-left: 4%;
+    }
+    main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 40% 3% 0 3%;
+        background-color: #bddbdb65;
+        padding: 5%;
+        border-radius: 15px;
+        padding-top: 1%;
+    }
+    .navigation nav a:hover {
+        padding: 0 0 0 0;
+        transform: none;
+    }
+    .navigation nav a{
+        transition: none;
+    }
+    .card p {
+        grid-column: auto;
+    }
+    .card button {
+        width: 100%;
+    }
+    .card img {
+        grid-column: auto;
+    }
+}
