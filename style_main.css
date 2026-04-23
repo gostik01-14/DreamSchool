@@ -169,6 +169,10 @@ footer ul p{
 .nav_footer{
     grid-column: 2;
 }
+.nav_footer a{
+    text-decoration: none;
+    color: black;
+}
 
 @media (max-width: 1300px) {
     .navigation nav a:hover {
