@@ -112,7 +112,7 @@ footer ul p{
 }
 @media (max-width: 1300px) {
     table td {
-        font-size: 75%;
+        font-size: 70%;
     }
     .card1 {
         grid-column: auto;
