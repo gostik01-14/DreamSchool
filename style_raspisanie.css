@@ -112,7 +112,7 @@ footer ul p{
 }
 @media (max-width: 1300px) {
     table td {
-        font-size: 90%;
+        font-size: 75%;
     }
     .card1 {
         grid-column: auto;
@@ -148,5 +148,11 @@ footer ul p{
         padding: 5%;
         border-radius: 15px;
         padding-top: 1%;
+    }
+    footer {
+        font-size: 80%;
+    }
+    footer ul p {
+        padding: 3%;
     }
 }
