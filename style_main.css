@@ -228,4 +228,10 @@ footer ul p{
         grid-column: auto;
         width: 100%;
     }
+    footer {
+        font-size: 80%;
+    }
+    footer ul p {
+        padding: 3%;
+    }
 }
