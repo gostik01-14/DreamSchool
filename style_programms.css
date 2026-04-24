@@ -150,4 +150,10 @@ footer ul p{
     .card img {
         grid-column: auto;
     }
+    footer {
+        font-size: 80%;
+    }
+    footer ul p {
+        padding: 3%;
+    }
 }
