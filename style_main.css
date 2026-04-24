@@ -228,6 +228,13 @@ footer ul p{
         grid-column: auto;
         width: 100%;
     }
+    li {
+        font-size: 75%;
+    }
+    button {
+        height: 75%;
+        width: 70%;
+    }
     footer {
         font-size: 80%;
     }
