@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style_test.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <center>
+                <h1>Школа мечты</h1>
+                <h2>Лучшая школа для тебя!</h2>
+                </center>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <center><nav>
+            <a href="main.html"><h3>Главная</h3></a>
+            <a href="programms.html"><h3>Программа</h3></a>
+            <a href="timetable.html"><h3>Расписание</h3></a>
+            <a href="test.html"><h3>Тест</h3></a>
+            </nav></center>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card" id="0">
+            <h1>Тест: «Какой ты IT-специалист?»</h1>
+            <p>Пройдя этот тест ты сможежь узнать какая профессия тебе подходит. <br><br> Внимательно прочитайте вопросы и выберите вариант ответа, который вам ближе всего. <br> P.s. этот тест был сделан deepseek'ом</p>
+            <button id="start">Начать</button>
+        </div>
+        
+        <!-- Сами вопросы-->
+        <div class="card_none" id="1">
+            <center><h1>1. Что вас больше всего привлекает в проекте?</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Возможность создать физический объект с нуля (деталь, прототип).</button>
+                <button class="col2" onclick="next('B')">Б) Визуальная сторона: как сайт выглядит и реагирует на мои действия.</button>
+                <button class="col1" onclick="next('C')">В) Логика и структура: как данные передаются и обрабатываются «под капотом».</button>
+                <button class="col2" onclick="next('D')">Г) Поиск скрытых ошибок и доведение продукта до идеала.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) Создание системы, которая учится на данных и принимает решения.</button></center>
+        </div>
+
+        <div class="card_none" id="2">
+            <center><h1>2. Какая задача звучит для вас заманчиво?</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Спроектировать 3D-модель в CAD и настроить 3D-принтер для печати сложной геометрии.</button>
+                <button class="col2" onclick="next('B')">Б) Сверстать адаптивный интерфейс и добавить анимацию по клику.</button>
+                <button class="col1" onclick="next('C')">В) Оптимизировать запросы к базе данных, чтобы сервер выдерживал 100к пользователей.</button>
+                <button class="col2" onclick="next('D')">Г) Написать автотесты, которые найдут уязвимость в неочевидном месте.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) Обучить нейросеть распознавать дефекты на производственной линии.</button></center>
+        </div>
+
+        <div class="card_none" id="3">
+            <center><h1>3. Какой школьный/вузовский предмет был (или кажется) самым интересным?</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Технология / Черчение / Материаловедение.</button>
+                <button class="col2" onclick="next('B')">Б) Дизайн / Информатика (про веб-страницы).</button>
+                <button class="col1" onclick="next('C')">В) Алгебра / Структуры данных и алгоритмы.</button>
+                <button class="col2" onclick="next('D')">Г) Логика / Основы безопасности.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) Статистика / Теория вероятностей / Высшая математика.</button></center>
+        </div>
+
+        <div class="card_none" id="4">
+            <center><h1>4. Выберите идеальное рабочее окружение:</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Лаборатория с принтерами, сканерами и паяльником.</button>
+                <button class="col2" onclick="next('B')">Б) Редактор кода с живым превью, браузер и Figma.</button>
+                <button class="col1" onclick="next('C')">В) Терминал, базы данных, облачные сервера.</button>
+                <button class="col2" onclick="next('D')">Г) Баг-трекинг система, разнообразие браузеров и устройств.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) Jupyter Notebook, GPU-фермы и датасеты.</button></center>
+        </div>
+
+        <div class="card_none" id="5">
+            <center><h1>5. Какую суперсилу вы хотели бы иметь?</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Материализовывать любую форму из пластика или металла.</button>
+                <button class="col2" onclick="next('B')">Б) Делать интерфейсы настолько удобными, что интуитивно понятны всем.</button>
+                <button class="col1" onclick="next('C')">В) Масштабировать что угодно (от серверов до бизнеса) без потери скорости.</button>
+                <button class="col2" onclick="next('D')">Г) Видеть скрытые баги там, где другие видят работающий код.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Г) Видеть скрытые баги там, где другие видят работающий код.</button></center>
+        </div>
+
+        <div class="card_none" id="6">
+            <center><h1>6. Что вы скажете про фразу «Это готово, можно выпускать»?</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) «Отлично, запускаем печать последней версии!»</button>
+                <button class="col2" onclick="next('B')">Б) «Проверю на трёх браузерах и мобильных разрешениях... ладно, выпускаем».</button>
+                <button class="col1" onclick="next('C')">В) «Надо ещё нагрузочное тестирование провести, мало ли».</button>
+                <button class="col2" onclick="next('D')">Г) «Стоп. А тест-кейс на граничный случай написан?» (или сам проверит).</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) «Модель показывает 95% точности. Будем дообучать или норм?»</button></center>
+        </div>
+
+        <div class="card_none" id="7">
+            <center><h1>7. Если бы вам дали старый легаси-код (или старый прибор), вы бы:</h1></center>
+            <nav>
+                <button class="col1" onclick="next('A')">А) Разобрали физически, изучили детали, предложил модернизацию через доп. печать.</button>
+                <button class="col2" onclick="next('B')">Б) Переписал фронт, чтобы хоть как-то это смотреть можно было.</button>
+                <button class="col1" onclick="next('C')">В) Переписал бэкенд, чтобы он не падал каждые 5 минут.</button>
+                <button class="col2" onclick="next('D')">Г) Написал тесты, чтобы понять, где именно он ломается.</button>
+            </nav>
+            <center><button class="col0" onclick="next('I')">Д) Скормил логи нейросети, чтобы она находила паттерны падений.</button></center>
+        </div>
+
+        
+        <!--- Это вывод какая проффессия тебе подходит -->
+        <div class="card_none" id="A">
+            <center><h1>Тебе больше всего подходит проффессия - <b>Аддитив инженер</b></h1></center>
+            <center><a href="programms.html#ingeneer"><button class="col0">Перейти на программу</button></a></center>
+        </div>
+
+        <div class="card_none" id="B">
+            <center><h1>Тебе больше всего подходит проффессия - <b>Frontend-разработчик</b></h1></center>
+            <center><a href="programms.html#frontend"><button class="col0">Перейти на программу</button></a></center>
+        </div>
+
+        <div class="card_none" id="C">
+            <center><h1>Тебе больше всего подходит проффессия - <b>Backend-разработчик</b></h1></center>
+            <center><a href="programms.html#backend"><button class="col0">Перейти на программу</button></a></center>
+        </div>
+
+        <div class="card_none" id="D">
+            <center><h1>Тебе больше всего подходит проффессия - <b>Тестировщик (QA инженер)</b></h1></center>
+            <center><a href="programms.html#testirovchik"><button class="col0">Перейти на программу</button></a></center>
+        </div>
+
+        <div class="card_none" id="I">
+            <center><h1>Тебе больше всего подходит проффессия - <b>Инженер ИИ-технологий (AI/ML Engineer)</b></h1></center>
+            <center><a href="programms.html#ai"><button class="col0">Перейти на программу</button></a></center>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <p>Телефон: +7 (913) 359 76 67</p>
+            <p>© 2026 «404НеНайдено». Все права защищены</p>
+            <p>г. Новокузнецк, ул. Кутузова 5А</p>
+            <a href="https://www.flaticon.com/ru/free-icons/" title="образование иконки">Образование иконки от Freepik - Flaticon</a> 
+        </ul>
+        <ul class="nav_footer">
+            <h4>Страницы:</h4>
+            <a href="main.html"><p>Главная</p></a>
+            <a href="programms.html"><p>Программа</p></a>
+            <a href="timetable.html"><p>Расписание</p></a>
+        </ul>
+    </footer>
+
+    <script src="script_test.js"></script>
+</body>
