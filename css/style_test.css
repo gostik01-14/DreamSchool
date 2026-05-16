@@ -8,11 +8,16 @@ main {
 main h1{
     text-align: center;
     margin-bottom: 40px;
+    color: #d5ecff;
 }
 .card {
-    background-color: #88A7EA;
+    background-color: #7a9de7;
     padding: 4%;
     border-radius: 15px;
+    color: #d5ecff;
+}
+.card p {
+    font-size: 120%;
 }
 .card nav {
     display: grid;
