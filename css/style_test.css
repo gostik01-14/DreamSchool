@@ -1,48 +1,53 @@
 main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 6% 3% 0 3%;
-    background-color: #88A7EA;
     padding: 5%;
     border-radius: 15px;
     padding-top: 1%;
-    color: #2e4e92;
 }
 main h1{
+    text-align: center;
     margin-bottom: 40px;
     color: #d5ecff;
 }
-.timetable {
-    display: grid;
-    gap: 45px;
-    column-gap: 90px;
-}
-.timetable div {
-    background-color: #456BBC;
+.card {
+    background-color: #7a9de7;
+    padding: 4%;
     border-radius: 15px;
-    text-align: center;
     color: #d5ecff;
-    font-family: Consolas;
-    transition: all ease 0.3s;
 }
-.timetable div table {
-    padding: 1% 5% 5% 5%;
-    width: 100%;
-    font-size: 160%;
+.card p {
+    font-size: 120%;
 }
-.timetable div hr {
-    border: white solid 2px;
+.card nav {
+    display: grid;
+    row-gap: 20%;
 }
-.card1 {
+.col1 {
     grid-column: 1;
 }
-.card2 {
+.col2 {
     grid-column: 2;
 }
-.card3 {
+.col3 {
     grid-column: 3;
 }
-.timetable div:hover {
-    transform: scale(1.2);
+.card button{
+    padding: 1% 10% 1% 10%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #d5ecff;
+    background-color: #2644cc;
+    border: 0;
+    transition: all ease 0.3s;
+    width: 80%;
+    text-align: center;
+}
+.card button:hover{
+    transform: scale(1.05);
+}
+.card_none {
+    display: none;
 }
 
 @media (max-width: 1100px) {
@@ -54,16 +59,20 @@ main h1{
         border-radius: 15px;
         padding-top: 1%;
     }
-    table td {
-        font-size: 70%;
+    .col1 {
+        margin-top: 6%;
+        width: 150%;
     }
-    .card1 {
-        grid-column: auto;
+    .col2 {
+        margin-top: 6%;
+        width: 100%;
     }
-    .card2 {
-        grid-column: auto;
+    .col3 {
+        margin-top: 6%;
+        width: 100%;
     }
-    .card3 {
-        grid-column: auto;
+    .card nav {
+        place-items: center;
+        display: block;
     }
 }
