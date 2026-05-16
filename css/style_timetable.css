@@ -1,0 +1,68 @@
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 6% 3% 0 3%;
+    background-color: #88A7EA;
+    padding: 5%;
+    border-radius: 15px;
+    padding-top: 1%;
+    color: #2e4e92;
+}
+main h1{
+    margin-bottom: 40px;
+}
+.timetable {
+    display: grid;
+    gap: 45px;
+    column-gap: 90px;
+}
+.timetable div {
+    background-color: #456BBC;
+    border-radius: 15px;
+    text-align: center;
+    color: #d5ecff;
+    font-family: Consolas;
+    transition: all ease 0.3s;
+}
+.timetable div table {
+    padding: 1% 5% 5% 5%;
+    width: 100%;
+    font-size: 160%;
+}
+.timetable div hr {
+    border: white solid 2px;
+}
+.card1 {
+    grid-column: 1;
+}
+.card2 {
+    grid-column: 2;
+}
+.card3 {
+    grid-column: 3;
+}
+.timetable div:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1100px) {
+    main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 180px 3% 0 3%;
+        background-color: #bddbdb65;
+        padding: 5%;
+        border-radius: 15px;
+        padding-top: 1%;
+    }
+    table td {
+        font-size: 70%;
+    }
+    .card1 {
+        grid-column: auto;
+    }
+    .card2 {
+        grid-column: auto;
+    }
+    .card3 {
+        grid-column: auto;
+    }
+}
