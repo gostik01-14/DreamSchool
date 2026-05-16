@@ -9,6 +9,7 @@ main {
 main h1{
     text-align: center;
     margin-bottom: 40px;
+    color: #d5ecff;
 }
 .cards {
     display: grid;
@@ -23,8 +24,11 @@ main h1{
     gap: 1%;
     border-radius: 15px;
 }
+.cards h2 {
+    font-size: 220%;
+}
 .cards p {
-    font-size: 150%;
+    font-size: 160%;
     margin-right: 50px;
 }
 .cards img {
@@ -55,7 +59,7 @@ main h1{
     }
     .cards {
         grid-template: none;
-        font-size: 70%;
+        font-size: 90%;
     }
     .card p {
         grid-column: auto;
