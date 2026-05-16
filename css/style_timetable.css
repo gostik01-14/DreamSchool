@@ -9,6 +9,7 @@ main {
 }
 main h1{
     margin-bottom: 40px;
+    color: #d5ecff;
 }
 .timetable {
     display: grid;
