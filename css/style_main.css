@@ -1,0 +1,212 @@
+main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 6% 3% 0 3%;
+    background-color: #88A7EA;
+    padding: 5%;
+    border-radius: 15px;
+    padding-top: 1%;
+}
+main h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.info{
+    background-color: #456BBC;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+    color: #d5ecff;
+}
+.info:hover {
+    transform: scale(1.03);
+}
+.info div{
+    grid-column: 1;
+}
+.info div p{
+    font-size: 110%;
+}
+.info img{
+    grid-column: 2;
+    width: 105%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.info img:hover {
+    transform: scale(1.03);
+}
+.news{
+    background-color: #456BBC;
+    padding: 4%;
+    margin-top: 8%;
+    border-radius: 15px;
+    color: #d5ecff;
+}
+.card_news{
+    background-color: #6C8AD5;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    margin-top: 7%;
+    transition: all ease 0.3s;
+    font-size: larger;
+}
+.card_news:hover {
+    transform: scale(1.03);
+}
+.card_news nav{
+    grid-column: 1;
+}
+.card_news img{
+    grid-column: 2;
+    width: 75%;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+}
+.card_news img:hover {
+    transform: scale(1.03);
+}
+.news button{
+    margin-top: 5%;
+    padding: 2% 13% 2% 13%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #d5ecff;
+    background-color: #1531AE;
+    border: 0;
+    transition: all ease 0.3s;
+}
+.news button:hover{
+    transform: scale(1.05);
+}
+.mega_weeks{
+    background-color: #456BBC;
+    padding: 6%;
+    display: grid;
+    gap: 1%;
+    border-radius: 15px;
+    margin-top: 5%;
+    color: #d5ecff;
+}
+.mega_weeks ul{
+    font-size: 150%;
+}
+.mega_weeks button{
+    margin-top: 5%;
+    padding: 2% 13% 2% 13%;
+    font-size: 150%;
+    border-radius: 15px;
+    color: #d5ecff;
+    background-color: #1531AE;
+    border: 0;
+    transition: all ease 0.3s;
+}
+.mega_weeks button:hover{
+    transform: scale(1.05);
+}
+.map {
+    background-color: #456BBC;
+    margin-top: 6%;
+    padding: 5%;
+    color: #d5ecff;
+    border-radius: 15px;
+}
+.map iframe {
+    border-radius: 15px;
+}
+.reviews {
+    background-color: #456BBC;
+    padding: 4%;
+    margin-top: 8%;
+    border-radius: 15px;
+    color: #d5ecff;
+}
+.list {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    color: #d5ecff;
+}
+.list .card1 {
+    padding: 5%;
+    background-color: #6C8AD5;
+    border-radius: 12px;
+    grid-column: 1;
+    transition: all ease 0.3s;
+}
+.list .card2 {
+    padding: 5%;
+    background-color: #6C8AD5;
+    border-radius: 12px;
+    grid-column: 2;
+    transition: all ease 0.3s;
+}
+.list .card3 {
+    padding: 5%;
+    background-color: #6C8AD5;
+    border-radius: 12px;
+    grid-column: 3;
+    transition: all ease 0.3s;
+}
+.list .card1:hover {
+    box-shadow: #293451 3px 3px 3px 3px;
+    transform: translateY(-10px);
+}
+.list .card2:hover {
+    box-shadow: #293451 3px 3px 3px 3px;
+    transform: translateY(-10px);
+}
+.list .card3:hover {
+    box-shadow: #293451 3px 3px 3px 3px;
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1100px) {
+    .list .card1 {
+        font-size: 85%;
+        grid-column: auto;
+    }
+    .list .card2 {
+        font-size: 85%;
+        grid-column: auto;
+    }
+    .list .card3 {
+        font-size: 85%;
+        grid-column: auto;
+    }
+    main {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 180px 3% 0 3%;
+        padding: 5%;
+        border-radius: 15px;
+        padding-top: 1%;
+    }
+    .info div{
+        grid-row: 2;
+        grid-column: auto;
+    }
+    .info img{
+        grid-row: 1;
+        grid-column: auto;
+        width: 100%;
+    }
+    .card_news nav{
+        grid-row: 2;
+        grid-column: auto;
+    }
+    .card_news img{
+        grid-row: 1;
+        grid-column: auto;
+        width: 100%;
+    }
+    li {
+        font-size: 75%;
+    }
+    button {
+        height: 75%;
+        width: 70%;
+    }
+}

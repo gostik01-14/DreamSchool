@@ -3,6 +3,7 @@ var B = 0;
 var C = 0;
 var D = 0;
 var I = 0;
+var F = 0;
 var index = 0;
 
 var div_0 = document.getElementById("0");
@@ -15,6 +16,7 @@ var div_B = document.getElementById("B");
 var div_C = document.getElementById("C");
 var div_D = document.getElementById("D");
 var div_I = document.getElementById("I");
+var div_F = document.getElementById("F");
 
 var button_start = document.getElementById("start");
 var buttons = document.getElementsByTagName("button");
@@ -36,22 +38,21 @@ function next(letter) {
         D++;
     } else if (letter == "I") {
         I++;
+    } else if (letter == "F") {
+        F++;
     }
     document.getElementById(index).className = "card_none";
     index++;
     if (index > 7) {
-        var arr = [A, B, C, D, I];
+        var arr = [A, B, C, D, I, F];
         arr.sort();
-        if (A == arr[4]) {
-            div_A.className = "card";
-        } else if (B == arr[4]) {
-            div_B.className = "card";
-        } else if (C == arr[4]) {
-            div_C.className = "card";
-        } else if (D == arr[4]) {
-            div_D.className = "card";
-        } else if (I == arr[4]) {
-            div_I.className = "card";
+        switch (arr[5]) {
+            case A: div_A.className = "card"; break;
+            case B: div_B.className = "card"; break;
+            case C: div_C.className = "card"; break;
+            case D: div_D.className = "card"; break;
+            case I: div_I.className = "card"; break;
+            case F: div_F.className = "card"; break;
         }
     } else {
         document.getElementById(index).className = "card";
