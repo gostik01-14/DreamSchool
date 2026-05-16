@@ -55,19 +55,19 @@ main h1{
         padding-top: 1%;
     }
     .col1 {
-        align-content: center;
-        grid-column: none;
+        margin-top: 6%;
+        width: 150%;
     }
     .col2 {
-        align-content: center;
-        grid-column: none;
+        margin-top: 6%;
+        width: 100%;
     }
-    .col0 {
-        align-content: center;
-        margin-top: 50%;
+    .col3 {
+        margin-top: 6%;
+        width: 100%;
     }
-    .card div {
+    .card nav {
         place-items: center;
-        row-gap: 5%;
+        display: block;
     }
 }
