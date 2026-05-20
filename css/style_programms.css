@@ -50,7 +50,7 @@ main h1{
     width: 80%;
     position: absolute;
     bottom: 40px;
-    left: 10%;
+    left: 5%;
 }
 .cards button:hover{
     transform: scale(1.05);
